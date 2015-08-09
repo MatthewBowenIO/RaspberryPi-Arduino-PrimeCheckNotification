@@ -11,7 +11,7 @@ def isPrime(x):
     # Fermat test
     if (x > 1):
         for time in range(3):
-            randomNumber = random.randint(2, x)-1
+                randomNumber = random.randint(2, x)-1
                 if ( pow(randomNumber, x-1, x) != 1 ):
                     return False
                 return True
@@ -49,7 +49,8 @@ def isPrimeTestTwo(x):
                         
                         if (randomNumberWithPower != (x - 1)):
                             return False
-return True
+        return True
+
 '''
 We start main in a background thread so we can listen for 'exit' terminal input from the user 
 input to stop the script and send the 'stop' command to the Arduino.
